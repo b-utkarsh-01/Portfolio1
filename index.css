@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Helvetica Now Display";
+    src: url("fonts/HelveticaNowDisplay-Regular.woff2") format("woff2"),
+      url("fonts/HelveticaNowDisplay-Regular.woff") format("woff"),
+      url("fonts/HelveticaNowDisplay-Regular.ttf") format("truetype");
+  }
+
+  .font-helvetica {
+    font-family: "Helvetica Now Display", sans-serif;
+  }
+
+*{
+    box-sizing: border-box;
+}
