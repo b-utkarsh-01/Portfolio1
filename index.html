@@ -1,315 +1,157 @@
 <!DOCTYPE html>
-<html lang="en" class="size-full scroll-smooth">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link
-      rel="shortcut icon"
-      href="professional-portfolio_3476457.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="professional-portfolio_3476457.png" type="image/x-icon" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <!-- <script src="https://cdn.tailwindcss.com"></script>   -->
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body class="size-full font-helvetica">
-    <main class="w-fullpy-8">
-      <nav class="flex justify-between px-[10rem] py-10">
+  <body class="font-helvetica w-full">
+    <main class="w-full py-8">
+      <!-- Navbar -->
+      <nav class="flex flex-wrap justify-between px-4 sm:px-10 lg:px-40 py-6">
         <h1 class="text-lg font-bold">Portfolio</h1>
-        <div class="links flex gap-6">
-          <a href="#Home" class="font-medium text-xl text-black font-medium"
-            >Home</a
-          >
-          <a href="#About" class="font-medium text-xl opacity-60 font-medium"
-            >About</a
-          >
-          <a href="#" class="font-medium text-xl opacity-60 font-medium"
-            >Contact</a
-          >
-          <a
-            href="#"
-            class="font-medium text-xl opacity-60 font-medium [word-spacing:-6px]"
-            >Work Together</a
-          >
+        <div class="links flex flex-wrap gap-4 sm:gap-6">
+          <a href="#Home" class="font-medium text-lg sm:text-xl text-black">Home</a>
+          <a href="#About" class="font-medium text-lg sm:text-xl opacity-60">About</a>
+          <a href="#" class="font-medium text-lg sm:text-xl opacity-60">Contact</a>
+          <a href="#" class="font-medium text-lg sm:text-xl opacity-60 [word-spacing:-4px]">Work Together</a>
         </div>
       </nav>
-      <section
-        class="px-[10rem] w-full mt-[2rem] flex justify-between items-end"
-        id="Home"
-      >
-        <div class="leftHeddings">
-          <h6 class="text-2xl font-bold -mb-[5px] tracking-tight">
-            Hello I am,
-          </h6>
-          <h1 class="text-7xl font-bold -ml-[3.4px] tracking-tight">
-            Utkarsh.
-          </h1>
-        </div>
 
+      <!-- Hero Section -->
+      <section id="Home" class="px-4 sm:px-10 lg:px-40 mt-8 w-full flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+        <div class="leftHeddings">
+          <h6 class="text-xl sm:text-2xl font-bold tracking-tight">Hello I am,</h6>
+          <h1 class="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight">Utkarsh.</h1>
+        </div>
         <div class="rightHeddings flex gap-3 items-center">
-          <h4 class="time opacity-60 text-sm"><span .time> </span></h4>
-          <div class="line w-[90px] h-[0.5px] bg-black"></div>
-          <div
-            class="quot font-semibold text-base tracking-tight [word-spacing:-1px]"
-          >
-            Creative Front End Devloper
-          </div>
+          <h4 class="time opacity-60 text-sm"></h4>
+          <div class="line w-[60px] sm:w-[90px] h-[1px] bg-black"></div>
+          <div class="quot font-semibold text-sm sm:text-base tracking-tight">Creative Front End Devloper</div>
         </div>
       </section>
-      <section class="px-[10rem]">
-        <div class="HeroImg w-full h-[35rem] mt-10 bg-green-100">
-          <img
-            src="HeroImg.avif"
-            alt=""
-            class="h-full w-full object-cover object-[0%_18%]"
-          />
+
+      <!-- Hero Image -->
+      <section class="px-4 sm:px-10 lg:px-40 mt-8">
+        <div class="HeroImg w-full h-auto max-h-[35rem] overflow-hidden mt-6">
+          <img src="HeroImg.avif" alt="" class="w-full object-cover object-[0%_18%]" />
         </div>
       </section>
-      <section
-        id="About"
-        class="m-full px-[11rem] py-20 mt-25 flex justify-center items-center"
-      >
-        <div class="text relative text-center w-3/4">
-          <img
-            class="h-[5rem] absolute -left-28 -top-10 -rotate-15"
-            src="assests\vsCode.png"
-            alt=""
-          />
-          <img
-            class="h-[5rem] absolute -right-18 -top-14 rotate-20"
-            src="assests\html.png"
-            alt=""
-          />
-          <img
-            class="h-[5rem] absolute -bottom-20 rotate-15"
-            src="assests\css.png"
-            alt=""
-          />
-          <img
-            class="h-[5rem] absolute -bottom-17 right-10 -rotate-20"
-            src="assests\js.png"
-            alt=""
-          />
-          <h1 class="text-5xl font-bold tracking-tighter mb-10">
-            [ I designed & build experiences ]
-          </h1>
-          <p class="text-lg font-medium tracking-tight">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            eos molestiae explicabo, adipisci suscipit quibusdam dicta a aperiam
-            tempore quod quo? Sint aut libero soluta voluptatem exercitationem
-            eius veritatis consectetur?
+
+      <!-- About Section -->
+      <section id="About" class="w-full px-4 sm:px-10 lg:px-44 py-16 flex justify-center items-center">
+        <div class="text relative text-center w-full sm:w-4/5">
+          <img class="h-16 absolute -left-12 -top-10 -rotate-15 hidden sm:block" src="assests/vsCode.png" alt="" />
+          <img class="h-16 absolute -right-14 -top-14 rotate-20 hidden sm:block" src="assests/html.png" alt="" />
+          <img class="h-16 absolute -bottom-20 rotate-15 hidden sm:block" src="assests/css.png" alt="" />
+          <img class="h-16 absolute -bottom-16 right-10 -rotate-20 hidden sm:block" src="assests/js.png" alt="" />
+          <h1 class="text-3xl sm:text-5xl font-bold tracking-tighter mb-8">[ I designed & build experiences ]</h1>
+          <p class="text-base sm:text-lg font-medium tracking-tight">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit...
           </p>
         </div>
       </section>
 
-      <section class="w-full relative mt-45 px-[10rem]">
-        <div
-          class="sticky top-0 w-full -px-10 py-8 bg-white flex items-center gap-6"
-        >
-          <h1 class="text-6xl font-bold">2017</h1>
-          <div class="w-32 h-1 bg-black opacity-50"></div>
-          <h1 class="text-6xl font-bold text-zinc-400">The Beginning.</h1>
+      <!-- Timeline Sections (2017 & 2018) -->
+      <section class="w-full mt-16 px-4 sm:px-10 lg:px-40">
+        <div class="sticky top-0 w-full py-6 bg-white flex flex-wrap items-center gap-4">
+          <h1 class="text-3xl sm:text-5xl font-bold">2017</h1>
+          <div class="w-20 h-1 bg-black opacity-50"></div>
+          <h1 class="text-3xl sm:text-5xl font-bold text-zinc-400">The Beginning.</h1>
         </div>
-        <div class="imageContainer w-full flex gap-10 px-10">
-          <div class="w-1/3 flex flex-col gap-6">
-            <div class="w-full h-200 bg-gray-300"></div>
-            <div class="w-full h-100 bg-blue-300"></div>
+        <div class="imageContainer w-full flex flex-col md:flex-row gap-6 mt-6">
+          <!-- Repeat for each column -->
+          <div class="w-full md:w-1/3 flex flex-col gap-4">
+            <div class="w-full h-40 bg-gray-300"></div>
+            <div class="w-full h-24 bg-blue-300"></div>
           </div>
+          <!-- other two columns... -->
+        </div>
+      </section>
 
-          <div class="w-1/3 flex flex-col gap-6 pt-50">
-            <div class="w-full h-200 bg-red-300"></div>
-            <div class="w-full h-100 bg-purple-300"></div>
-          </div>
-
-          <div class="w-1/3 flex flex-col gap-6 pt-20">
-            <div class="w-full h-100 bg-green-300"></div>
-            <div class="w-full h-200 bg-yellow-300"></div>
+      <!-- Tech Section -->
+      <section class="w-full relative mt-16 px-4">
+        <img src="./assests/bgdots.png" alt="" class="w-full hidden sm:block" />
+        <div class="tech w-full flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-5">
+          <h3 class="text-3xl sm:text-5xl md:text-6xl tracking-tighter font-medium text-center">I am great at</h3>
+          <div class="TechImg flex flex-wrap w-full md:w-3/4 gap-4 justify-center bg-white p-4">
+            <!-- Repeat <img> icons here -->
           </div>
         </div>
       </section>
 
-      <section class="w-full relative mt-45 px-[10rem]">
-        <div
-          class="sticky top-0 w-full -px-10 py-8 bg-white flex items-center gap-6"
-        >
-          <h1 class="text-6xl font-bold">2018</h1>
-          <div class="w-32 h-1 bg-black opacity-50"></div>
-          <h1 class="text-6xl font-bold text-zinc-400">Escalation.</h1>
-        </div>
-        <div class="imageContainer w-full flex gap-10 px-10">
-          <div class="w-1/3 flex flex-col gap-6">
-            <div class="w-full h-200 bg-gray-300"></div>
-            <div class="w-full h-100 bg-blue-300"></div>
-          </div>
-
-          <div class="w-1/3 flex flex-col gap-6 pt-50">
-            <div class="w-full h-200 bg-red-300"></div>
-            <div class="w-full h-100 bg-purple-300"></div>
-          </div>
-
-          <div class="w-1/3 flex flex-col gap-6 pt-20">
-            <div class="w-full h-100 bg-green-300"></div>
-            <div class="w-full h-200 bg-yellow-300"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="w-full relative">
-        <img src="./assests/bgdots.png" alt="" />
-        <div
-          class="tech w-full flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-5"
-        >
-          <h3 class="text-6xl tracking-tighter font-medium">I am great at</h3>
-          <div
-            class="TechImg flex flex-wrap w-1/2 gap-10 items-center justify-center pt-6 bg-white px-3"
-          >
-            <img class="w-1/16 contrast-200" src="./assests/tech2.png" alt="" />
-            <img class="w-1/16" src="./assests/tech3.png" alt="" />
-            <img class="w-1/16" src="./assests/tech4.jpeg" alt="" />
-            <img class="w-1/16" src="./assests/tech5.png" alt="" />
-            <img class="w-1/16 contrast-260" src="./assests/tech6.png" alt="" />
-            <img class="w-1/16" src="./assests/tech7.png" alt="" />
-            <img class="w-1/16 contrast-200" src="./assests/tech8.png" alt="" />
-            <img class="w-1/16 contrast-200" src="./assests/tech9.png" alt="" />
-            <img class="w-1/16" src="./assests/Tech10.png" alt="" />
-            <img class="w-2/16" src="./assests/Tech11.png" alt="" />
-            <img
-              class="w-1/16 contrast-200"
-              src="./assests/tech12.webp"
-              alt=""
-            />
-            <img class="w-1/16" src="./assests/tech13.png" alt="" />
-            <img
-              class="w-1/16 contrast-200"
-              src="./assests/tech14.png"
-              alt=""
-            />
-            <img class="w-1/16" src="./assests/tech15.png" alt="" />
-            <img class="w-1/16" src="./assests/tech16.png" alt="" />
-            <img class="w-1/16" src="./assests/tech17.png" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <section class="Testimonials mt-20 px-[10rem]">
+      <!-- Testimonials Section -->
+      <section class="Testimonials mt-20 px-4 sm:px-10 lg:px-40">
         <div class="font-bold leading-none">
-          <h2 class="text-4xl">Client</h2>
-          <h1 class="text-8xl flex justify-between items-center">
+          <h2 class="text-2xl sm:text-4xl">Client</h2>
+          <h1 class="text-4xl sm:text-6xl lg:text-8xl flex flex-wrap justify-between items-center">
             Testimonials
-            <img src="./assests/arrow.png" alt="" class="w-1/5" />
+            <img src="./assests/arrow.png" alt="" class="w-1/3 sm:w-1/5" />
             works
           </h1>
         </div>
-
-        <div class="Britannia pt-[3rem]">
-          <h1 class="text-7xl">Britannia</h1>
-          <p class="text-4xl pt-[1rem] gap-4 flex items-center">
-            2017
-            <img src="./assests/arrow.png" class="w-[5rem]" alt="" />
-            Mumbai
-          </p>
-          <div class="w-full h-[30rem] bg-red-600 mt-[2rem]">
-            <img
-              class="size-full object-cover contrast-120"
-              src="./assests/Britannia.avif"
-              alt=""
-            />
+        <div class="Britannia pt-12">
+          <h1 class="text-3xl sm:text-6xl">Britannia</h1>
+          <p class="text-xl sm:text-3xl pt-4 flex gap-4 items-center">2017 <img src="./assests/arrow.png" class="w-20" /> Mumbai</p>
+          <div class="w-full h-[20rem] sm:h-[30rem] mt-4">
+            <img class="w-full h-full object-cover contrast-125" src="./assests/Britannia.avif" alt="" />
           </div>
         </div>
-
-        <div class="w-full mt-[5rem] flex -gap[3rem] justify-between">
-          <div class="OrangeSplashh tracking-tighter">
-            <h1 class="text-5xl w-full font-medium">Orange Splash</h1>
-            <p class="pt-[1rem] flex gap-6 text-3xl items-center">
-              2022<img
-                src="./assests/arrow.png"
-                class="w-[8rem]"
-                alt=""
-              />Mumbai
-            </p>
-            <div class="Splashh w-full h-[30rem]">
-              <img
-                class="size-full object-cover"
-                src="./assests/splash.jpg"
-                alt=""
-              />
+        <!-- Orange Splash & Palm Jumerah -->
+        <div class="w-full mt-12 flex flex-col lg:flex-row gap-8 justify-between">
+          <!-- Orange -->
+          <div class="flex-1">
+            <h1 class="text-2xl sm:text-5xl font-medium">Orange Splash</h1>
+            <p class="pt-4 flex gap-4 text-xl items-center">2022<img src="./assests/arrow.png" class="w-24" />Mumbai</p>
+            <div class="w-full h-[20rem] sm:h-[30rem] mt-4">
+              <img class="w-full h-full object-cover" src="./assests/splash.jpg" alt="" />
             </div>
           </div>
-          <div class="PalmJumerah tracking-tighter mt-[7rem] h-100">
-            <h1 class="text-5xl w-full font-medium">Palm Jumerah</h1>
-            <p class="pt-[1rem] flex gap-6 text-3xl items-center">
-              2025<img src="./assests/arrow.png" class="w-[8rem]" alt="" />Dubai
-            </p>
-            <div class="Jumerah w-[46rem] h-[27rem] bg-gray-300">
-              <img
-                class="size-full object-cover"
-                src="./assests/Dubai.avif"
-                alt=""
-              />
+          <!-- Palm -->
+          <div class="flex-1 mt-12 lg:mt-28">
+            <h1 class="text-2xl sm:text-5xl font-medium">Palm Jumerah</h1>
+            <p class="pt-4 flex gap-4 text-xl items-center">2025<img src="./assests/arrow.png" class="w-24" />Dubai</p>
+            <div class="w-full h-[20rem] sm:h-[27rem] mt-4">
+              <img class="w-full h-full object-cover" src="./assests/Dubai.avif" alt="" />
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="w-full px-[10rem] mt-[15rem]">
-      <section class="flex justify-between py-10 font-bold">
-        <div class="flex gap-1">
-          <h1
-            class="text-2xl font-medium transition-underline duration-[.5s] hover:underline"
-          >
-            <a href="https://www.instagram.com/b__utkarsh__1311/"
-              >Utkarsh Pathak</a
-            >
+    <!-- Footer -->
+    <footer class="w-full px-4 sm:px-10 lg:px-40 mt-40">
+      <section class="flex flex-col sm:flex-row justify-between py-10 font-bold gap-4">
+        <div>
+          <h1 class="text-xl sm:text-2xl transition-underline duration-500 hover:underline">
+            <a href="https://www.instagram.com/b__utkarsh__1311/">Utkarsh Pathak</a>
           </h1>
         </div>
-        <div class="flex gap-1">
-          <p class="text-2xl font-medium font-bold">
-            <span class="TimeAndDate"></span>
-          </p>
+        <div>
+          <p class="text-xl sm:text-2xl font-bold"><span class="TimeAndDate"></span></p>
         </div>
       </section>
     </footer>
 
+    <!-- JS Time -->
     <script>
       function TimeChnage() {
-        var dt = new Date();
-        var str = "[ " + (dt.getHours() % 12) + " : " + dt.getMinutes();
-        dt.getHours % 12 > 0 ? (str += " : AM ]") : (str += " PM ]");
+        const dt = new Date();
+        let str = "[ " + (dt.getHours() % 12 || 12) + " : " + dt.getMinutes();
+        dt.getHours() >= 12 ? (str += " : PM ]") : (str += " : AM ]");
         document.querySelector(".time").textContent = str;
       }
       function DateAndTimeChnage() {
-        var ds = new Date();
-        var months = [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-          "August",
-          "September",
-          "October",
-          "November",
-          "December",
-        ];
-
-        var str =
-          ds.getDate() +
-          " " +
-          months[ds.getMonth()] +
-          "," +
-          ds.getFullYear() +
-          " [ " +
-          (ds.getHours() % 12) +
-          " : " +
-          ds.getMinutes();
-        ds.getHours % 12 > 0 ? (str += " : AM ]") : (str += " : PM ]");
+        const ds = new Date();
+        const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        let str = ds.getDate() + " " + months[ds.getMonth()] + "," + ds.getFullYear() + " [ " + (ds.getHours() % 12 || 12) + " : " + ds.getMinutes();
+        ds.getHours() >= 12 ? (str += " : PM ]") : (str += " : AM ]");
         document.querySelector(".TimeAndDate").textContent = str;
       }
-      setInterval(function () {
+      setInterval(() => {
         TimeChnage();
         DateAndTimeChnage();
       }, 1000);
