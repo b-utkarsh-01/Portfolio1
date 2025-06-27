@@ -48,7 +48,8 @@
 }
 #mobile-menu:hover a:hover {
   opacity: 1;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   #mobile-menu {
@@ -185,5 +186,16 @@
     justify-content: center;
     display: flex;
     gap: 10;
+  }
+}
+
+@media (min-width: 768px) {
+  #Testimonials h1 span {
+    justify-content: center;
+    gap: 3.5rem;
+  }
+  #Testimonials h1 span img {
+    width: 20%;
+    display: inline;
   }
 }/*# sourceMappingURL=style.css.map */
