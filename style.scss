@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("fonts/HelveticaNowDisplay-Regular.woff2") format("woff2"),
+    url("fonts/HelveticaNowDisplay-Regular.woff") format("woff"),
+    url("fonts/HelveticaNowDisplay-Regular.ttf") format("truetype");
+}
+
+.font-helvetica {
+  font-family: "Helvetica Now Display", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.transparent-bg {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+
+#mobile-menu {
+  gap: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  z-index: 50;
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+
+  a {
+    transition: opacity 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    border-radius: 30px;
+    opacity: 0.6;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+      color: rgb(255, 255, 255);
+      background-color: rgb(59, 59, 59);
+      box-shadow: 7px 7px 7px rgb(0, 0, 0);
+    }
+  }
+
+  &:hover a {
+    opacity: 0.3;
+  }
+
+  &:hover a:hover {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+
+  @media (min-width: 768px) {
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    gap: 1.5rem;
+
+    a {
+      width: auto;
+      text-align: left;
+      background-color: transparent;
+
+      &:hover {
+        color: white;
+        box-shadow: none;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+#menu-toggle.open {
+  .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5.7px, 6px);
+  }
+  .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5.7px, -6px);
+  }
+}
+
+.rightHeddings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem; // Mobile gap
+
+  .quot {
+    font-weight: 600;
+    font-size: 0.875rem; // sm
+    word-spacing: -1px;
+    color: black;
+  }
+
+  .line {
+    width: 90px;
+    height: 1px;
+    background-color: black;
+  }
+
+  .time {
+    opacity: 0.6;
+    font-size: 0.75rem; // xs
+    color: black;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem; // md+ gap
+    justify-content: flex-end;
+
+    .quot {
+      font-size: 1rem; // base
+    }
+
+    .time {
+      font-size: 0.875rem; // sm
+    }
+  }
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; // same as gap-10
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    width: 33.333333%;
+  }
+
+  > div {
+    width: 100%; // Mobile view: full width
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; // same as gap-6
+  }
+}
+
+#theBeginning {
+  @media (min-width: 768px) {
+    #title {
+      align-items: center;
+
+      padding: 1.5rem 10rem 1.5rem 10rem; // Adjust padding for larger screens
+      h1 {
+        font-size: 3.6rem; // Adjust font size for larger screens
+      }
+    }
+
+    #innerStory {
+      padding: 0 10rem;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      div:nth-child(1) {
+        div:nth-child(1) {
+          padding: 0%;
+          margin-top: 0; // Adjust padding for larger screens
+          height: 50rem; // Adjust height for larger screens
+        }
+        div:nth-child(2) {
+          height: 25rem; // Adjust height for larger screens
+        }
+      }
+
+      div:nth-child(2) {
+        div:nth-child(1) {
+          height: 25rem; // Adjust height for larger screens
+        }
+        div:nth-child(2) {
+          height: 30rem; // Adjust height for larger screens
+        }
+      }
+
+      div:nth-child(3) {
+        div:nth-child(1) {
+          height: 50rem; // Adjust height for larger screens
+        }
+        div:nth-child(2) {
+          height: 25rem; // Adjust height for larger screens
+        }
+      }
+    }
+  }
+}
+
+#GoodAt {
+  
+  @media (min-width: 768px) {
+    #ForegroundContent{
+      padding: 1.5rem 10rem 1.5rem 10rem; // Adjust padding for larger screens
+      h3{
+        font-size: 5rem; // Adjust font size for larger screens
+      }
+      .TechImg{
+        justify-content: center;
+        display: flex;
+        gap: 10;        
+        #techImg{
+        }
+      }
+    }
+  }
+}
