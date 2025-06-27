@@ -218,3 +218,17 @@
     }
   }
 }
+
+#Testimonials {
+  @media (min-width: 768px) {
+    div:nth-child(1) {
+      h1{
+        span{
+          img{
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+}

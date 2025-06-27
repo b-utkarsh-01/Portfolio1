@@ -186,4 +186,10 @@
     display: flex;
     gap: 10;
   }
+}
+
+@media (min-width: 768px) {
+  #Testimonials div:nth-child(1) h1 span img {
+    display: inline;
+  }
 }/*# sourceMappingURL=style.css.map */
