@@ -2,334 +2,418 @@
     https://iridescent-alpaca-6c724c.netlify.app/# -->
 <!DOCTYPE html>
 <html lang="en" class="size-full scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="./assests/fevicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script>   -->
+  </head>
+  <body class="size-full font-helvetica">
+    <main class="w-fullpy-8 flex flex-col gap-4">
+      <nav
+        class="flex justify-between items-center px-6 sm:px-10 lg:px-[10rem] py-6 relative"
+      >
+        <h1 class="text-xl font-bold">Portfolio</h1>
+        <!-- Hamburger Icon for Mobile -->
+        <button
+          id="menu-toggle"
+          class="relative w-4 h-8 flex flex-col items-center justify-center gap-[6px] z-50 md:hidden"
+        >
+          <span
+            class="bar w-full h-[2px] bg-black transition-all duration-300"
+          ></span>
+          <span
+            class="bar w-full h-[2px] bg-black transition-all duration-300"
+          ></span>
+          <span
+            class="bar w-full h-[2px] bg-black transition-all duration-300"
+          ></span>
+        </button>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="shortcut icon" href="./assests/fevicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <!-- <script src="https://cdn.tailwindcss.com"></script>   -->
-</head>
+        <!-- Nav Links -->
+        <div
+          id="mobile-menu"
+          class="hidden flex md:flex flex-col md:flex-row gap-2 md:gap-6 md:static absolute top-full right-6 bg-white md:bg-transparent p-4 md:p-0 shadow-md md:shadow-none rounded-full links"
+        >
+          <a href="#Home" class="font-medium text-lg opacity-60">Home</a>
+          <a href="#About" class="font-medium text-lg opacity-60">About</a>
+          <a href="#Contact" class="font-medium text-lg opacity-60">Contact</a>
+          <a
+            href="#Work"
+            class="font-medium text-lg opacity-60 tracking-tighter"
+            >Work Together</a
+          >
+        </div>
+      </nav>
 
-<body class="size-full font-helvetica">
-  <main class="w-fullpy-8 flex flex-col gap-4">
-    <nav class="flex justify-between items-center px-6 sm:px-10 lg:px-[10rem] py-6 relative">
-      <h1 class="text-xl font-bold">Portfolio</h1>
-      <!-- Hamburger Icon for Mobile -->
-      <button id="menu-toggle"
-        class="relative w-4 h-8 flex flex-col items-center justify-center gap-[6px] z-50 md:hidden">
-        <span class="bar w-full h-[2px] bg-black transition-all duration-300"></span>
-        <span class="bar w-full h-[2px] bg-black transition-all duration-300"></span>
-        <span class="bar w-full h-[2px] bg-black transition-all duration-300"></span>
-      </button>
-
-      <!-- Nav Links -->
-      <div id="mobile-menu"
-        class="hidden flex md:flex flex-col md:flex-row gap-2 md:gap-6 md:static absolute top-full right-6 bg-white md:bg-transparent p-4 md:p-0 shadow-md md:shadow-none rounded-full links">
-        <a href="#Home" class="font-medium text-lg opacity-60">Home</a>
-        <a href="#About" class="font-medium text-lg opacity-60">About</a>
-        <a href="#Contact" class="font-medium text-lg opacity-60">Contact</a>
-        <a href="#Work" class="font-medium text-lg opacity-60 tracking-tighter">Work Together</a>
-      </div>
-    </nav>
-
-    <section id="Home"
-      class="w-full mt-8 px-6 sm:px-12 md:px-20 lg:px-[10rem] flex flex-col md:flex-row justify-between items-start md:items-end gap-6 md:gap-0">
-      <!-- Left Headings -->
-      <div class="leftHeddings">
-        <h6 class="text-lg sm:text-xl md:text-2xl font-bold tracking-tight mb-1">
-          Hello I am,
-        </h6>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-          Utkarsh.
-        </h1>
-      </div>
-
-      <!-- Right Headings: ONE version only -->
-      <div class="rightHeddings">
-        <div class="quot">Creative Front End Developer</div>
-        <div class="line"></div>
-        <h4 class="time"><span class="time">12:45 PM</span></h4>
-      </div>
-    </section>
-
-    <section class="w-full mt-[4rem] px-6 sm:px-12 md:px-20 lg:px-[10rem] flex items-end">
-      <div class="HeroImg w-full h-[60vh] sm:h-[70vh] md:h-[80vh] bg-green-100 overflow-hidden">
-        <img src="./assests/HeroImg.avif" alt="" class="w-full h-full object-cover object-[0%_18%]" />
-      </div>
-    </section>
-
-
-
-    <section id="About"
-      class="relative w-full px-6 sm:px-12 md:px-20 lg:px-[11rem] py-28 sm:py-36 mt-12 sm:mt-20 flex justify-center items-center">
-      <div class="text relative text-center w-full sm:w-5/6 md:w-3/4 z-10">
-        <!-- Floating Tech Icons -->
-        <img
-          class="h-12 sm:h-14 md:h-20 absolute left-0 sm:-left-10 md:-left-24 top-0 sm:-top-8 md:top-4 -rotate-[15deg] z-0"
-          src="assests/vsCode.png" alt="VS Code" />
-        <img
-          class="h-12 sm:h-14 md:h-20 absolute right-0 sm:-right-10 md:-right-20 top-4 sm:top-0 md:top-8 rotate-[20deg] z-0"
-          src="assests/html.png" alt="HTML" />
-        <img class="h-12 sm:h-14 md:h-20 absolute bottom-[-2rem] md:bottom-[-2rem] md:bottom-[-4rem] rotate-[15deg] z-0"
-          src="assests/css.png" alt="CSS" />
-        <img
-          class="h-12 sm:h-14 md:h-20 absolute top-[12rem] sm:bottom-[-2rem] md:bottom-[-3rem] right-8 md:right-10 md:right-10 md:top-[11rem] -rotate-[20deg] z-0"
-          src="assests/js.png" alt="JavaScript" />
-
-        <!-- Heading -->
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter mb-6 sm:mb-10 leading-tight">
-          [ I design & build
-          <br class="md:hidden inline" />
-          experiences ]
-        </h1>
-
-        <!-- Paragraph -->
-        <p class="text-base sm:text-lg font-medium tracking-tight leading-relaxed text-gray-700">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos
-          molestiae explicabo, adipisci suscipit quibusdam dicta a aperiam tempore
-          quod quo? Sint aut libero soluta voluptatem exercitationem eius veritatis
-          consectetur?
-        </p>
-      </div>
-    </section>
-
-    <section id="theBeginning" class=" w-full relative mt-45 px-[1rem] flex flex-col items-center">
-      <div id="title" class="sticky top-0 w-full py-5 px-3 bg-white flex items-center gap-6">
-        <h1 class="text-[2rem] font-bold">2017</h1>
-        <div class="w-32 h-1 bg-black opacity-50"></div>
-        <h1 class="text-[2rem] font-bold text-zinc-400">The Beginning.</h1>
-      </div>
-
-      <div id="innerStory" class=" flex flex-col w-full justify-center items-center gap-6 ">
-        <div class="w-[80%] flex flex-col gap-6">
-          <div class="w-full h-[30rem] bg-gray-300"></div>
-          <div class="w-full h-[25rem] bg-blue-300"></div>
+      <section
+        id="Home"
+        class="w-full mt-8 px-6 sm:px-12 md:px-20 lg:px-[10rem] flex flex-col md:flex-row justify-between items-start md:items-end gap-6 md:gap-0"
+      >
+        <!-- Left Headings -->
+        <div class="leftHeddings">
+          <h6
+            class="text-lg sm:text-xl md:text-2xl font-bold tracking-tight mb-1"
+          >
+            Hello I am,
+          </h6>
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight"
+          >
+            Utkarsh.
+          </h1>
         </div>
 
-        <div class=" w-[80%] flex flex-col gap-6 ">
-          <div class="w-full h-[25rem] bg-red-300"></div>
-          <div class="w-full h-[30rem] bg-purple-300"></div>
+        <!-- Right Headings: ONE version only -->
+        <div class="rightHeddings">
+          <div class="quot">Creative Front End Developer</div>
+          <div class="line"></div>
+          <h4 class="time"><span class="time">12:45 PM</span></h4>
+        </div>
+      </section>
+
+      <section
+        class="w-full mt-[4rem] px-6 sm:px-12 md:px-20 lg:px-[10rem] flex items-end"
+      >
+        <div
+          class="HeroImg w-full h-[60vh] sm:h-[70vh] md:h-[80vh] bg-green-100 overflow-hidden"
+        >
+          <img
+            src="./assests/HeroImg.avif"
+            alt=""
+            class="w-full h-full object-cover object-[0%_18%]"
+          />
+        </div>
+      </section>
+
+      <section
+        id="About"
+        class="relative w-full px-6 sm:px-12 md:px-20 lg:px-[11rem] py-28 sm:py-36 mt-12 sm:mt-20 flex justify-center items-center"
+      >
+        <div class="text relative text-center w-full sm:w-5/6 md:w-3/4 z-10">
+          <!-- Floating Tech Icons -->
+          <img
+            class="h-12 sm:h-14 md:h-20 absolute left-0 sm:-left-10 md:-left-24 top-0 sm:-top-8 md:top-4 -rotate-[15deg] z-0"
+            src="assests/vsCode.png"
+            alt="VS Code"
+          />
+          <img
+            class="h-12 sm:h-14 md:h-20 absolute right-0 sm:-right-10 md:-right-20 top-4 sm:top-0 md:top-8 rotate-[20deg] z-0"
+            src="assests/html.png"
+            alt="HTML"
+          />
+          <img
+            class="h-12 sm:h-14 md:h-20 absolute bottom-[-2rem] md:bottom-[-2rem] md:bottom-[-4rem] rotate-[15deg] z-0"
+            src="assests/css.png"
+            alt="CSS"
+          />
+          <img
+            class="h-12 sm:h-14 md:h-20 absolute top-[12rem] sm:bottom-[-2rem] md:bottom-[-3rem] right-8 md:right-10 md:right-10 md:top-[11rem] -rotate-[20deg] z-0"
+            src="assests/js.png"
+            alt="JavaScript"
+          />
+
+          <!-- Heading -->
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter mb-6 sm:mb-10 leading-tight"
+          >
+            [ I design & build
+            <br class="md:hidden inline" />
+            experiences ]
+          </h1>
+
+          <!-- Paragraph -->
+          <p
+            class="text-base sm:text-lg font-medium tracking-tight leading-relaxed text-gray-700"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            eos molestiae explicabo, adipisci suscipit quibusdam dicta a aperiam
+            tempore quod quo? Sint aut libero soluta voluptatem exercitationem
+            eius veritatis consectetur?
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="theBeginning"
+        class="w-full relative mt-45 px-[1rem] flex flex-col items-center"
+      >
+        <div
+          id="title"
+          class="sticky top-0 w-full py-5 px-3 bg-white flex items-center gap-6"
+        >
+          <h1 class="text-[2rem] font-bold">2017</h1>
+          <div class="w-32 h-1 bg-black opacity-50"></div>
+          <h1 class="text-[2rem] font-bold text-zinc-400">The Beginning.</h1>
         </div>
 
-        <div class="w-[80%] flex flex-col gap-6 ">
-          <div class="w-full h-[30rem] bg-green-300"></div>
-          <div class="w-full h-[25rem] bg-yellow-300"></div>
+        <div
+          id="innerStory"
+          class="flex flex-col w-full justify-center items-center gap-6"
+        >
+          <div class="w-[80%] flex flex-col gap-6">
+            <div class="w-full h-[30rem] bg-gray-300"></div>
+            <div class="w-full h-[25rem] bg-blue-300"></div>
+          </div>
+
+          <div class="w-[80%] flex flex-col gap-6">
+            <div class="w-full h-[25rem] bg-red-300"></div>
+            <div class="w-full h-[30rem] bg-purple-300"></div>
+          </div>
+
+          <div class="w-[80%] flex flex-col gap-6">
+            <div class="w-full h-[30rem] bg-green-300"></div>
+            <div class="w-full h-[25rem] bg-yellow-300"></div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="theBeginning" class=" w-full relative px-[1rem] flex flex-col items-center">
-      <div id="title" class="sticky top-0 w-full py-5 px-3 bg-white flex items-center gap-6">
-        <h1 class="text-[2rem] font-bold">2018</h1>
-        <div class="w-32 h-1 bg-black opacity-50"></div>
-        <h1 class="text-[2rem] font-bold text-zinc-400">Escalation.</h1>
-      </div>
-
-      <div id="innerStory" class=" flex flex-col w-full justify-center items-center gap-6 ">
-        <div class="w-[80%] flex flex-col gap-6">
-          <div class="w-full h-[30rem] bg-gray-300"></div>
-          <div class="w-full h-[25rem] bg-blue-300"></div>
+      <section
+        class="w-full relative flex flex-col items-center py-[3rem] px-[1rem] overflow-hidden mt-[1rem] gap-6"
+        id="GoodAt"
+      >
+        <!-- Background image container -->
+        <div class="absolute inset-0 w-full h-full z-0">
+          <img
+            src="./assests/bgdots.png"
+            alt=""
+            class="w-full h-full object-contain sm:object-cover"
+          />
         </div>
 
-        <div class=" w-[80%] flex flex-col gap-6 ">
-          <div class="w-full h-[25rem] bg-red-300"></div>
-          <div class="w-full h-[30rem] bg-purple-300"></div>
+        <!-- Foreground content -->
+        <div
+          id="ForegroundContent"
+          class="tech w-full flex flex-col relative z-10 items-center gap-5"
+        >
+          <h3
+            class="text-[2rem] sm:text-[3rem] tracking-tighter font-medium text-center"
+          >
+            I am great at
+          </h3>
+          <div
+            class="TechImg flex flex-wrap w-full gap-5 items-center justify-center bg-white rounded-md"
+          >
+            <!-- Your tech icons -->
+            <img
+              id="techImg"
+              class="w-1/17 contrast-200"
+              src="./assests/tech2.png"
+              alt=""
+            />
+
+            <img id="techImg" class="w-1/17" src="./assests/tech3.png" alt="" />
+
+            <img
+              id="techImg"
+              class="w-1/17"
+              src="./assests/tech4.jpeg"
+              alt=""
+            />
+
+            <img id="techImg" class="w-1/17" src="./assests/tech5.png" alt="" />
+
+            <img
+              id="techImg"
+              class="w-1/17 contrast-260"
+              src="./assests/tech6.png"
+              alt=""
+            />
+
+            <img id="techImg" class="w-1/17" src="./assests/tech7.png" alt="" />
+
+            <img
+              id="techImg"
+              class="w-1/17 contrast-200"
+              src="./assests/tech8.png"
+              alt=""
+            />
+
+            <img
+              id="techImg"
+              class="w-1/17 contrast-200"
+              src="./assests/tech9.png"
+              alt=""
+            />
+
+            <img
+              id="techImg"
+              class="w-1/17"
+              src="./assests/Tech10.png"
+              alt=""
+            />
+
+            <img
+              id="techImg"
+              class="w-2/17"
+              src="./assests/Tech11.png"
+              alt=""
+            />
+
+            <img
+              id="techImg"
+              class="w-1/17 contrast-200"
+              src="./assests/tech12.webp"
+              alt=""
+            />
+
+            <img
+              id="techImg"
+              class="w-1/17"
+              src="./assests/tech13.png"
+              alt=""
+            />
+
+            <img
+              id="techImg"
+              class="w-1/17 contrast-200"
+              src="./assests/tech14.png"
+              alt=""
+            />
+
+            <img
+              id="techImg"
+              class="w-1/17"
+              src="./assests/tech15.png"
+              alt=""
+            />
+
+            <img
+              id="techImg"
+              class="w-1/17"
+              src="./assests/tech16.png"
+              alt=""
+            />
+
+            <img
+              id="techImg"
+              class="w-1/17"
+              src="./assests/tech17.png"
+              alt=""
+            />
+          </div>
         </div>
+      </section>
 
-        <div class="w-[80%] flex flex-col gap-6 ">
-          <div class="w-full h-[30rem] bg-green-300"></div>
-          <div class="w-full h-[25rem] bg-yellow-300"></div>
+      <section
+        id="Testimonials"
+        class="Testimonials mt-20 px-4 md:px-10 lg:px-[10rem]"
+      >
+        <div class="font-bold leading-none">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl">Client</h2>
+          <h1
+            class="text-4xl md:text-6xl lg:text-8xl flex justify-between items-start md:items-center gap-4 md:gap-0"
+          >
+            <span class="flex justify-center"
+              >Testimonials
+              <img src="./assests/arrow.png" alt="" class="hidden lg:block" />
+              works</span
+            >
+          </h1>
         </div>
-      </div>
-    </section>
-
-    <section class="w-full relative flex flex-col items-center py-[3rem] px-[1rem] overflow-hidden mt-[1rem] gap-6" id="GoodAt">
-      <!-- Background image container -->
-      <div class="absolute inset-0 w-full h-full z-0">
-        <img src="./assests/bgdots.png" alt="" class="w-full h-full object-contain sm:object-cover" />
-      </div>
-
-      <!-- Foreground content -->
-      <div id="ForegroundContent" class="tech w-full flex flex-col relative z-10 items-center gap-5">
-        <h3 class="text-[2rem] sm:text-[3rem] tracking-tighter font-medium text-center">I am great at</h3>
-        <div class="TechImg flex flex-wrap w-full  gap-5 items-center justify-center bg-white rounded-md">
-          <!-- Your tech icons -->
-          <img id="techImg" class="w-1/17 contrast-200" src="./assests/tech2.png" alt="" />
-          
-          <img id="techImg" class="w-1/17" src="./assests/tech3.png" alt="" />
-          
-          <img id="techImg" class="w-1/17" src="./assests/tech4.jpeg" alt="" />
-          
-          <img id="techImg" class="w-1/17" src="./assests/tech5.png" alt="" />
-          
-          <img id="techImg" class="w-1/17 contrast-260" src="./assests/tech6.png" alt="" />
-          
-          <img id="techImg" class="w-1/17" src="./assests/tech7.png" alt="" />
-          
-          <img id="techImg" class="w-1/17 contrast-200" src="./assests/tech8.png" alt="" />
-          
-          <img id="techImg" class="w-1/17 contrast-200" src="./assests/tech9.png" alt="" />
-          
-          <img id="techImg" class="w-1/17" src="./assests/Tech10.png" alt="" />
-          
-          <img id="techImg" class="w-2/17" src="./assests/Tech11.png" alt="" />
-          
-          <img id="techImg" class="w-1/17 contrast-200" src="./assests/tech12.webp" alt="" />
-          
-          <img id="techImg" class="w-1/17" src="./assests/tech13.png" alt="" />
-          
-          <img id="techImg" class="w-1/17 contrast-200" src="./assests/tech14.png" alt="" />
-          
-          <img id="techImg" class="w-1/17" src="./assests/tech15.png" alt="" />
-          
-          <img id="techImg" class="w-1/17" src="./assests/tech16.png" alt="" />
-          
-          <img id="techImg" class="w-1/17" src="./assests/tech17.png" alt="" />
+        <!-- Britannia -->
+        <div class="Britannia pt-10">
+          <h1 class="text-4xl md:text-6xl lg:text-7xl">Britannia</h1>
+          <p
+            class="text-xl md:text-2xl lg:text-4xl pt-4 flex items-center gap-4"
+          >
+            2017
+            <img src="./assests/arrow.png" class="w-12 md:w-16" alt="" />
+            Mumbai
+          </p>
+          <div class="w-full h-[20rem] md:h-[25rem] lg:h-[30rem] mt-6">
+            <img
+              class="size-full object-cover contrast-120"
+              src="./assests/Britannia.avif"
+              alt=""
+            />
+          </div>
         </div>
-      </div>
-    </section>
+        <!-- Orange Splash & Palm Jumeirah -->
+        <div
+          class="w-full mt-16 flex flex-col lg:flex-row justify-between gap-10"
+        >
+          <!-- Orange Splash -->
+          <div class="OrangeSplashh tracking-tighter w-full lg:w-1/2">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium">
+              Orange Splash
+            </h1>
+            <p
+              class="pt-4 text-lg md:text-2xl lg:text-3xl flex items-center gap-4"
+            >
+              2022
+              <img src="./assests/arrow.png" class="w-20 md:w-28" alt="" />
+              Mumbai
+            </p>
+            <div
+              class="Splashh w-full h-[20rem] md:h-[25rem] lg:h-[30rem] mt-4"
+            >
+              <img
+                class="size-full object-cover"
+                src="./assests/splash.jpg"
+                alt=""
+              />
+            </div>
+          </div>
 
-    <section id="Testimonials" class="Testimonials mt-20 px-4 md:px-10 lg:px-[10rem]">
-  <div class="font-bold leading-none">
-    <h2 class="text-2xl md:text-3xl lg:text-4xl">Client</h2>
-    <h1 class="text-4xl md:text-6xl lg:text-8xl flex justify-between items-start md:items-center gap-4 md:gap-0 ">
-      <span class="flex justify-center">Testimonials <img src="./assests/arrow.png" alt="" class="hidden lg:block"  />
- works</span>
+          <!-- Palm Jumerah -->
+          <div
+            class="PalmJumerah tracking-tighter w-full lg:w-1/2 mt-10 lg:mt-28"
+          >
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium">
+              Palm Jumerah
+            </h1>
+            <p
+              class="pt-4 text-lg md:text-2xl lg:text-3xl flex items-center gap-4"
+            >
+              2025
+              <img src="./assests/arrow.png" class="w-20 md:w-28" alt="" />
+              Dubai
+            </p>
+            <div
+              class="Jumerah w-full h-[20rem] md:h-[25rem] lg:h-[27rem] bg-gray-300 mt-4"
+            >
+              <img
+                class="size-full object-cover"
+                src="./assests/Dubai.avif"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    </h1>
-  </div>
-    <section id="Testimonials" class="Testimonials mt-20 px-4 md:px-10 lg:px-[10rem]">
-  <div class="font-bold leading-none">
-    <h2 class="text-2xl md:text-3xl lg:text-4xl">Client</h2>
-    <h1 class="text-4xl md:text-6xl lg:text-8xl flex justify-between items-start md:items-center gap-4 md:gap-0 ">
-      <span class="flex justify-center">Testimonials <img src="./assests/arrow.png" alt="" class="hidden lg:block"  />
- works</span>
-
-    </h1>
-  </div>
-
-  <!-- Britannia -->
-  <div class="Britannia pt-10">
-    <h1 class="text-4xl md:text-6xl lg:text-7xl">Britannia</h1>
-    <p class="text-xl md:text-2xl lg:text-4xl pt-4 flex items-center gap-4">
-      2017
-      <img src="./assests/arrow.png" class="w-12 md:w-16" alt="" />
-      Mumbai
-    </p>
-    <div class="w-full h-[20rem] md:h-[25rem] lg:h-[30rem] mt-6">
-      <img class="size-full object-cover contrast-120" src="./assests/Britannia.avif" alt="" />
-    </div>
-  </div>
-  <!-- Britannia -->
-  <div class="Britannia pt-10">
-    <h1 class="text-4xl md:text-6xl lg:text-7xl">Britannia</h1>
-    <p class="text-xl md:text-2xl lg:text-4xl pt-4 flex items-center gap-4">
-      2017
-      <img src="./assests/arrow.png" class="w-12 md:w-16" alt="" />
-      Mumbai
-    </p>
-    <div class="w-full h-[20rem] md:h-[25rem] lg:h-[30rem] mt-6">
-      <img class="size-full object-cover contrast-120" src="./assests/Britannia.avif" alt="" />
-    </div>
-  </div>
-
-  <!-- Orange Splash & Palm Jumeirah -->
-  <div class="w-full mt-16 flex flex-col lg:flex-row justify-between gap-10">
-    <!-- Orange Splash -->
-    <div class="OrangeSplashh tracking-tighter w-full lg:w-1/2">
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium">Orange Splash</h1>
-      <p class="pt-4 text-lg md:text-2xl lg:text-3xl flex items-center gap-4">
-        2022
-        <img src="./assests/arrow.png" class="w-20 md:w-28" alt="" />
-        Mumbai
-      </p>
-      <div class="Splashh w-full h-[20rem] md:h-[25rem] lg:h-[30rem] mt-4">
-        <img class="size-full object-cover" src="./assests/splash.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Palm Jumerah -->
-    <div class="PalmJumerah tracking-tighter w-full lg:w-1/2 mt-10 lg:mt-28">
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium">Palm Jumerah</h1>
-      <p class="pt-4 text-lg md:text-2xl lg:text-3xl flex items-center gap-4">
-        2025
-        <img src="./assests/arrow.png" class="w-20 md:w-28" alt="" />
-        Dubai
-      </p>
-      <div class="Jumerah w-full h-[20rem] md:h-[25rem] lg:h-[27rem] bg-gray-300 mt-4">
-        <img class="size-full object-cover" src="./assests/Dubai.avif" alt="" />
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Orange Splash & Palm Jumeirah -->
-  <div class="w-full mt-16 flex flex-col lg:flex-row justify-between gap-10">
-    <!-- Orange Splash -->
-    <div class="OrangeSplashh tracking-tighter w-full lg:w-1/2">
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium">Orange Splash</h1>
-      <p class="pt-4 text-lg md:text-2xl lg:text-3xl flex items-center gap-4">
-        2022
-        <img src="./assests/arrow.png" class="w-20 md:w-28" alt="" />
-        Mumbai
-      </p>
-      <div class="Splashh w-full h-[20rem] md:h-[25rem] lg:h-[30rem] mt-4">
-        <img class="size-full object-cover" src="./assests/splash.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Palm Jumerah -->
-    <div class="PalmJumerah tracking-tighter w-full lg:w-1/2 mt-10 lg:mt-28">
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium">Palm Jumerah</h1>
-      <p class="pt-4 text-lg md:text-2xl lg:text-3xl flex items-center gap-4">
-        2025
-        <img src="./assests/arrow.png" class="w-20 md:w-28" alt="" />
-        Dubai
-      </p>
-      <div class="Jumerah w-full h-[20rem] md:h-[25rem] lg:h-[27rem] bg-gray-300 mt-4">
-        <img class="size-full object-cover" src="./assests/Dubai.avif" alt="" />
-      </div>
-    </div>
-  </div>
-</section>
-
-  </main>
-
-<footer class="w-full mt-[10rem] px-4 md:px-10 lg:px-[10rem]">
-  <section class="flex md:flex-row justify-between items-start md:items-center py-6 gap-4 font-bold">
-    <div>
-      <h1 class="text-lg md:text-xl lg:text-2xl font-medium transition-all duration-300 hover:underline">
-        <a href="https://www.instagram.com/b__utkarsh__1311/" target="_blank">Utkarsh Pathak</a>
-      </h1>
-    </div>
-    <div>
-      <p class="text-lg md:text-xl lg:text-2xl font-medium">
-        <span class="TimeAndDate"></span>
-      </p>
-    </div>
-  </section>
-</footer>
-
-<footer class="w-full mt-[10rem] px-4 md:px-10 lg:px-[10rem]">
-  <section class="flex md:flex-row justify-between items-start md:items-center py-6 gap-4 font-bold">
-    <div>
-      <h1 class="text-lg md:text-xl lg:text-2xl font-medium transition-all duration-300 hover:underline">
-        <a href="https://www.instagram.com/b__utkarsh__1311/" target="_blank">Utkarsh Pathak</a>
-      </h1>
-    </div>
-    <div>
-      <p class="text-lg md:text-xl lg:text-2xl font-medium">
-        <span class="TimeAndDate"></span>
-      </p>
-    </div>
-  </section>
-</footer>
-
-  <script src="toggleMenu.js"></script>
-  <script src="script.js"></script>
-</body>
-
+    <footer class="w-full mt-[10rem] px-4 md:px-10 lg:px-[10rem]">
+      <section
+        class="flex md:flex-row justify-between items-start md:items-center py-6 gap-4 font-bold"
+      >
+        <div>
+          <h1
+            class="text-lg md:text-xl lg:text-2xl font-medium transition-all duration-300 hover:underline"
+          >
+            <a
+              href="https://www.instagram.com/b__utkarsh__1311/"
+              target="_blank"
+              >Utkarsh Pathak</a
+            >
+          </h1>
+        </div>
+        <div>
+          <p class="text-lg md:text-xl lg:text-2xl font-medium">
+            <span class="TimeAndDate"></span>
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script src="toggleMenu.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
