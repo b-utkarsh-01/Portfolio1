@@ -30,6 +30,7 @@
   border-radius: 2rem;
 
   a {
+    position: relative;
     transition: opacity 0.3s ease, color 0.3s ease, background-color 0.3s ease;
     text-transform: uppercase;
     width: 100%;
@@ -39,6 +40,18 @@
     border-radius: 30px;
     opacity: 0.6;
     cursor: pointer;
+  line-height: 1; // tighter vertical space
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: rgb(0, 0, 0); // Black underline
+      transition: width 0.5s ease;
+    }
 
     &:hover {
       opacity: 1;
@@ -48,18 +61,20 @@
     }
   }
 
+  // Mobile view hover behavior
   &:hover a {
     opacity: 0.3;
   }
 
   &:hover a:hover {
     opacity: 1;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 600;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
+    background-color: rgb(59, 59, 59);
+    box-shadow: 7px 7px 7px rgb(0, 0, 0);
   }
 
+  // Desktop view styles
   @media (min-width: 768px) {
     display: inline;
     flex-direction: row;
@@ -74,15 +89,39 @@
       width: auto;
       text-align: left;
       background-color: transparent;
+      opacity: 0.6;
+      color: inherit;
+
+      &::after {
+        background-color: rgb(0, 0, 0); // underline color
+      }
 
       &:hover {
-        color: white;
-        box-shadow: none;
+        color: rgb(0, 0, 0); // BLACK on hover
+        font-weight: 600;
         background-color: transparent;
+        box-shadow: none;
       }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    &:hover a {
+      opacity: 0.6;
+    }
+
+    &:hover a:hover {
+      opacity: 1;
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+      background-color: transparent;
+      box-shadow: none;
     }
   }
 }
+
 
 #menu-toggle.open {
   .bar:nth-child(1) {
@@ -204,18 +243,17 @@
 }
 
 #GoodAt {
-  
   @media (min-width: 768px) {
-    #ForegroundContent{
+    #ForegroundContent {
       padding: 1.5rem 10rem 1.5rem 10rem; // Adjust padding for larger screens
-      h3{
+      h3 {
         font-size: 5rem; // Adjust font size for larger screens
       }
-      .TechImg{
+      .TechImg {
         justify-content: center;
         display: flex;
-        gap: 10;        
-        #techImg{
+        gap: 10;
+        #techImg {
         }
       }
     }
@@ -225,10 +263,10 @@
 #Testimonials {
   @media (min-width: 768px) {
     h1 {
-      span{
+      span {
         justify-content: center;
         gap: 3.5rem;
-        img{
+        img {
           width: 20%;
           display: inline;
         }

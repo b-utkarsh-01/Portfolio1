@@ -27,6 +27,7 @@
   border-radius: 2rem;
 }
 #mobile-menu a {
+  position: relative;
   transition: opacity 0.3s ease, color 0.3s ease, background-color 0.3s ease;
   text-transform: uppercase;
   width: 100%;
@@ -36,6 +37,17 @@
   border-radius: 30px;
   opacity: 0.6;
   cursor: pointer;
+  line-height: 1;
+}
+#mobile-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  transition: width 0.5s ease;
 }
 #mobile-menu a:hover {
   opacity: 1;
@@ -48,10 +60,10 @@
 }
 #mobile-menu:hover a:hover {
   opacity: 1;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 600;
-  color: rgb(0, 0, 0);
-  font-weight: 600;
+  background-color: rgb(59, 59, 59);
+  box-shadow: 7px 7px 7px rgb(0, 0, 0);
 }
 @media (min-width: 768px) {
   #mobile-menu {
@@ -68,11 +80,30 @@
     width: auto;
     text-align: left;
     background-color: transparent;
+    opacity: 0.6;
+    color: inherit;
+  }
+  #mobile-menu a::after {
+    background-color: rgb(0, 0, 0);
   }
   #mobile-menu a:hover {
-    color: white;
-    box-shadow: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
     background-color: transparent;
+    box-shadow: none;
+  }
+  #mobile-menu a:hover::after {
+    width: 100%;
+  }
+  #mobile-menu:hover a {
+    opacity: 0.6;
+  }
+  #mobile-menu:hover a:hover {
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    background-color: transparent;
+    box-shadow: none;
   }
 }
 
