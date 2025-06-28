@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Helvetica Now Display";
-  src: url("fonts/HelveticaNowDisplay-Regular.woff2") format("woff2"), url("fonts/HelveticaNowDisplay-Regular.woff") format("woff"), url("fonts/HelveticaNowDisplay-Regular.ttf") format("truetype");
+  src: url("fonts/HelveticaNowDisplay-Regular.woff2") format("woff2"),
+    url("fonts/HelveticaNowDisplay-Regular.woff") format("woff"),
+    url("fonts/HelveticaNowDisplay-Regular.ttf") format("truetype");
 }
 .font-helvetica {
   font-family: "Helvetica Now Display", sans-serif;
@@ -48,8 +50,7 @@
 }
 #mobile-menu:hover a:hover {
   opacity: 1;
-  color: rgb(0, 0, 0);
-  font-weight: 600;
+  color: rgb(255, 255, 255);
 }
 @media (min-width: 768px) {
   #mobile-menu {
@@ -68,7 +69,8 @@
     background-color: transparent;
   }
   #mobile-menu a:hover {
-    color: white;
+    color: black !important;
+    font-weight: 600;
     box-shadow: none;
     background-color: transparent;
   }
@@ -190,12 +192,11 @@
 }
 
 @media (min-width: 768px) {
-  #Testimonials h1 span {
+  #Testimonials div:nth-child(1) h1 span {
     justify-content: center;
-    gap: 3.5rem;
   }
-  #Testimonials h1 span img {
-    width: 20%;
+  #Testimonials div:nth-child(1) h1 span img {
     display: inline;
+    width: 20%;
   }
-}/*# sourceMappingURL=style.css.map */
+} 

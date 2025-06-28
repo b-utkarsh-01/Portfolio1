@@ -54,8 +54,7 @@
 
   &:hover a:hover {
     opacity: 1;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
+    color: rgb(255, 255, 255);
   }
 
   @media (min-width: 768px) {
@@ -72,9 +71,9 @@
       width: auto;
       text-align: left;
       background-color: transparent;
-
       &:hover {
-        color: white;
+        color: black !important;
+        font-weight: 600;
         box-shadow: none;
         background-color: transparent;
       }
@@ -202,18 +201,17 @@
 }
 
 #GoodAt {
-  
   @media (min-width: 768px) {
-    #ForegroundContent{
+    #ForegroundContent {
       padding: 1.5rem 10rem 1.5rem 10rem; // Adjust padding for larger screens
-      h3{
+      h3 {
         font-size: 5rem; // Adjust font size for larger screens
       }
-      .TechImg{
+      .TechImg {
         justify-content: center;
         display: flex;
-        gap: 10;        
-        #techImg{
+        gap: 10;
+        #techImg {
         }
       }
     }
@@ -222,13 +220,14 @@
 
 #Testimonials {
   @media (min-width: 768px) {
-    h1 {
-      span{
-        justify-content: center;
-        gap: 3.5rem;
-        img{
-          width: 20%;
-          display: inline;
+    div:nth-child(1) {
+      h1 {
+        span {
+          justify-content: center;
+          img {
+            display: inline;
+            width: 20%;
+          }
         }
       }
     }
